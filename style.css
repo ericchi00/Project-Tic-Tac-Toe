@@ -14,9 +14,10 @@ header {
     display: flex;
     height: 10%;
     width: 100%;
-    background-color: #6AB187;
+    background-color: rgb(133, 194, 128);
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .content {
@@ -31,7 +32,7 @@ header {
 .tictactoeWrapper {
     width: 500px;
     height: 500px;
-    border: 10px solid #36454F;
+    border: 5px solid #36454F;
     border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -39,7 +40,7 @@ header {
 }
 
 .box {
-    border: 1px solid black;
+    border: 1px solid #36454F;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,5 +73,4 @@ footer {
     width: 75px;
     background-color: #36454F;
     color: white;
-    border-radius: 25px;
 }
