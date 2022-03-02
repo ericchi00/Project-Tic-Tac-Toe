@@ -1,29 +1,76 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-body {
+html, body {
     height: 100vh;
     width: 100vw;
+    background-color: #CED2CC;
+}
+
+header {
     display: flex;
+    height: 10%;
+    width: 100%;
+    background-color: #6AB187;
     justify-content: center;
     align-items: center;
 }
 
-header {
-    position: absolute;
-    top: 1rem;
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
 }
 
 .tictactoeWrapper {
     width: 500px;
     height: 500px;
-    border: 1px solid black;
+    border: 10px solid #36454F;
+    border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .box {
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+}
+
+.playerWrapper {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+}
+
+.buttonContainer {
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+.reset {
+    width: 75px;
+    background-color: #36454F;
+    color: white;
+    border-radius: 25px;
 }
