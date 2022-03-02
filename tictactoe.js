@@ -48,6 +48,7 @@ const gameBoard = (() => {
 const displayController = (() => {
     const box = document.querySelectorAll('.box');
     const playerTurn = document.querySelector('.playerTurn');
+    const reset = document.querySelector('.reset');
     const player1 = Player('X');
     const player2 = Player('O');
     let count = 1; //odd = player1's turn, even = player2's turn
@@ -64,6 +65,12 @@ const displayController = (() => {
             box.removeEventListener('click', addMarker);
         })
     }
+
+    //reset reloads the page
+    reset.addEventListener('click', () => {
+        reload = location.reload();
+    })
+
     //adds marker to gameBoard and updates count
     function addMarker() {
         const index = this.closest('.box').getAttribute('data-count');
