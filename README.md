@@ -1,2 +1,2 @@
 # Project-Tic-Tac-Toe
-creating a tic tac toe game to practice writing good code
+[Live Demo](https://ericchi00.github.io/Project-Tic-Tac-Toe/)
